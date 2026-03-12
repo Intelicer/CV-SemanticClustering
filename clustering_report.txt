@@ -1,0 +1,26 @@
+Semantic Image Clustering with CLIP
+
+1. Dataset description
+- Source folder: images
+- Number of images: 500
+
+2. CLIP model explanation
+- Model: openai/clip-vit-base-patch32
+- Embedding dimension: 512
+
+3. Embedding generation
+- One embedding vector generated per image using CLIP image encoder.
+
+4. Clustering method
+- K-Means with n_clusters=5
+
+5. Visualization
+- 2D projection using t-SNE/PCA and colored by cluster.
+
+6. Results and discussion
+- Silhouette Score: 0.0679
+- Cluster 0: size=100, top_class=airplane, purity=1.00
+- Cluster 1: size=89, top_class=airplane, purity=1.00
+- Cluster 2: size=110, top_class=airplane, purity=1.00
+- Cluster 3: size=84, top_class=airplane, purity=1.00
+- Cluster 4: size=117, top_class=airplane, purity=1.00
